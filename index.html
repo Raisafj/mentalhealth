@@ -3,206 +3,82 @@
 
 <head>
 
-    <title>bub</title>
+    <title>sitting</title>
 
     <style>
          a:link{
-	color: #fffefe;
+	color: #d8caca;
 	text-decoration: none;
 	}
 	a:hover {
-	color: #fff6f6;
+	color: #ecd9d9;
 	text-decoration: none;
 	}
 	a:visited {
-	color: #f8f8f8;
+	color: #cfc0c0;
 	text-decoration: none;}
 	
-        
-        *{
-            margin: 0;
-            padding: 0;
-            font-family: monospace, san-serif;
+        body {
+             /* background: url(Speech1.jpg);  */
+             /* background-color: #ffffff; */
+             /* background-size: 100%;  */
+            background-repeat: no-repeat;
+             font-family: cursive;
+             /* position: fixed; */
+             /* width: 1280px; */
+             /* height: 800px; */
+ 
+       
         }
-        .hero{
-           
-           width: 1280px;
-            height: 800px;
-            background-image: url(https://cdn.glitch.com/9dff30d0-070c-4cc0-bd54-f248ee840ad5%2Fgreen.jpg?v=1602257491477);
-            background-size: cover;
-            background-position: center;
-            position: fixed;
-            overflow: hidden;
-        }
-         .bubbles img{ 
-            width: 50px;
-            animation: bubble 7s linear infinite;
-        }
-        .bubbles{
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            position: fixed;
-            bottom:-70px;
-             
-        }
-
-        @keyframes bubble {
-            0%{
-                transform: translateY(0);
-                opacity: 0;
-            }
-             50%{
-                
-                opacity: 1;
-            } 
-            70%{
-               
-                opacity: 1;
-            } 
-            100%{
-                transform: translateY(-80vh);
-                opacity: 0;
+        .container{
             
-            }
-        }
-        h3 {
-	color: rgb(147, 148, 118);
-	font-size: 70px;
-	text-transform: uppercase;
-	text-align: center;
-	display: flex;
-	margin: 10;
+            width: 1280px;
+            height: 800px;
+            background-image: url(https://cdn.glitch.com/9dff30d0-070c-4cc0-bd54-f248ee840ad5%2FSpeech1.jpg?v=1602257428468);
+            background-size: 100%;
+            position: fixed;
+            overflow: hidden;}
+.glow {
+  font-size: 85px;
+  color: rgb(255, 248, 248);
+   position: absolute;
+            top: 30%;
+            right: 32%;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
 }
-.container {
-	margin-top: 0px;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
-}
-
-h3 {
-	color: rgb(45, 59, 18);
-	font-size: 70px;
-	text-transform: uppercase;
-	text-align: center;
-	display: flex;
-	margin: 10;
-}
-
-h3 span {
-	transition: 1s;
-}
-
-h3:hover span {
-	filter: blur(15px);
-	opacity: 0;
-	transform: scale(1.5);
-}
-
-h3 span:nth-child(10n+1) {
-	transition-delay: 0.8s;
-}
-
-h3 span:nth-child(10n+2) {
-	transition-delay: 0.7s;
-}
-
-h3 span:nth-child(10n+3) {
-	transition-delay: 0.6s;
-}
-
-h3 span:nth-child(10n+4) {
-	transition-delay: 0.5s;
-}
-
-h3 span:nth-child(10n+5) {
-	transition-delay: 0.4s;
-}
-
-h3 span:nth-child(10n+6) {
-	transition-delay: 0.3s;
-}
-
-h3 span:nth-child(10n+7) {
-	transition-delay: 0.2s;
-}
-
-h3 span:nth-child(10n+8) {
-	transition-delay: 0.1s;
-}
-span:hover {
-	font-size: 200%;}
-    
-            .bubbles img:nth-child(1){ 
-                animation-delay: 2s;
-                width: 25px;
-            }
-             .bubbles img:nth-child(2){
-                animation-delay: 1s;
-               
-            }
-             .bubbles img:nth-child(3){
-                animation-delay: 3s;
-                width: 25px;
-            }
-             .bubbles img:nth-child(4){
-                animation-delay: 4.5s;
-                width: 0px;
-            }
-            .bubbles img:nth-child(5){
-                animation-delay: 3s;
-            }
-             .bubbles img:nth-child(6){
-                animation-delay: 6s;
-                width: 20px;
-            }
-             .bubbles img:nth-child(7){
-                animation-delay: 4.5s;
-                width: 35px;
-            }
-             .link {
+.s {
             font-size: 15px;
-            position: absolute;
-            top: 86%;
-            right: 50%;
-           
+            font-color:black;            
+             position: absolute;
+            top: 76%;
+            right: 33%;
+            transition: transform 0.2;
         }
 
-        
-        </style>
-        <head>
-        <body>
-        <div class="hero">
-        </div>
-        <div class="link"><a href="thoughts.html"> &#128167; </a>
-        </div>
-        <div class="bubbles"> 
-          <img src="https://cdn.glitch.com/9dff30d0-070c-4cc0-bd54-f248ee840ad5%2Fbubbleorange.png?v=1602257407575">
-           <img src="https://cdn.glitch.com/9dff30d0-070c-4cc0-bd54-f248ee840ad5%2Fbubbleorange.png?v=1602257407575">
-           <img src="https://cdn.glitch.com/9dff30d0-070c-4cc0-bd54-f248ee840ad5%2Fbubbleorange.png?v=1602257407575">
-           <img src="https://cdn.glitch.com/9dff30d0-070c-4cc0-bd54-f248ee840ad5%2Fbubbleorange.png?v=1602257407575">
-           <img src="https://cdn.glitch.com/9dff30d0-070c-4cc0-bd54-f248ee840ad5%2Fbubbleorange.png?v=1602257407575">
-           <img src="https://cdn.glitch.com/9dff30d0-070c-4cc0-bd54-f248ee840ad5%2Fbubbleorange.png?v=1602257407575">
-           <img src="https://cdn.glitch.com/9dff30d0-070c-4cc0-bd54-f248ee840ad5%2Fbubbleorange.png?v=1602257407575">
-           
-              
-           </div>
-        <div class="container"> <h3>
-                <span>O</span>
-                <span>n&nbsp</span>
-                <span>M</span>
-                <span>y&nbsp</span>
-                <span>M</span>
-                <span>i</span>
-                <span>n</span>
-                <span>d</span>
-                <span>...</span>
-                <div id="div3">
-                  
-    </head>
-        </body>
-        <html>
+        .s:hover {
+            transform: scale(1.2);
+        }
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f0e115, 0 0 40px #fca708, 0 0 50px #e65f93, 0 0 60px #ad64e9, 0 0 70px #f015d3;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #df8fff, 0 0 40px #f19f94, 0 0 50px #74c9a8, 0 0 60px #9c6bd4, 0 0 70px #546bf0, 0 0 80px #fff88f;
+  }
+}
+    </style>
+
+</head>
+
+<body>
+<div class="container">
+
+<div class="glow"><a href="sit.html"> THOUGHTS </a></div>
+<div class="s"><a href="statement1.html"> Statement</a></div></div>
+
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Walking Man</title>
+    <meta charset="UTF-8">
+
+    <style>
+        a:link{
+	color: #201c25;
+	text-decoration: none;
+	}
+	a:hover {
+	color: #19161d;
+	text-decoration: none;
+	}
+	a:visited {
+	color: #0e0d0f;
+	text-decoration: none;}
+	
+        body {
+            background-color: rgb(66, 62, 62);
+             /* background: url(build.jpg);  */
+             /* width: 1280px; */
+             /* height: 800px; */
+             /* background-size: 100%;    */
+            /* background-repeat: no-repeat  */
+        }
+         #container { 
+         width: 1280px;
+         height: 800px;
+         
+         background: url(https://cdn.glitch.com/9dff30d0-070c-4cc0-bd54-f248ee840ad5%2Fpursky.jpg?v=1602257450056);
+         background-size: 100%; 
+         position: fixed;
+         background-repeat: no-repeat
+         } 
+
+        .words {
+            color: #473a5c;
+            font-weight: bold;
+
+        }
+
+        .Breath {
+            font-size: 104px;
+            position: absolute;
+            top: -10%;
+            right: 60%;
+            transition: transform 0.2;
+
+        }
+
+        .Breath:hover {
+            transform: scale(1.2);
+        }
+
+        .ok {
+            font-size: 70px;
+            position: absolute;
+            top: 5%;
+            right: 30%;
+            transition: transform 0.2;
+        }
+
+        .ok:hover {
+            transform: scale(1.2);
+        }
+
+        .look {
+            font-size: 75px;
+            position: absolute;
+            top: -5%;
+            right: 18%;
+            transition: transform 0.2;
+        }
+
+        .look:hover {
+            transform: scale(1.2);
+        }
+
+        .hurt {
+            font-size: 55px;
+            position: absolute;
+            top: 20%;
+            right: 68%;
+            transition: transform 0.2;
+        }
+
+        .hurt:hover {
+            transform: scale(1.2);
+        }
+
+        .Do {
+            font-size: 95px;
+            position: absolute;
+            top: 15%;
+            right: 30%;
+            transition: transform 0.2;
+        }
+
+        .Do:hover {
+            transform: scale(1.2);
+        }
+
+        .away {
+            font-size: 60px;
+            position: absolute;
+            top: 30%;
+            right: 5%;
+            transition: transform 0.2;
+        }
+
+        .away:hover {
+            transform: scale(1.2);
+        }
+        .better {
+            font-size: 15px;
+            position: absolute;
+            top: 48%;
+            right: 34%;
+            transition: transform 0.2;
+        }
+
+        .better:hover {
+            transform: scale(1.2);
+        }
+
+
+
+
+        #runner {
+            margin-top: 37%;
+            background: url(walk.png);
+            width: 60px;
+            height: 132px;
+            animation: walk 1s steps(8) infinite,
+                forward 5s linear infinite;
+        }
+
+        @keyframes walk {
+            0% {
+                background-position: 0px;
+            }
+
+            100% {
+                background-position: -600px;
+            }
+        }
+
+        @keyframes forward {
+            0% {
+                transform: translateX(100px);
+            }
+
+            100% {
+                transform: translateX(1200px)
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container"> 
+    <div id="runner"></div>
+    <div id="road"></div>
+    <div class="words">
+        <p class="Breath">BREATHE</p>
+        <p class="Do">HANG ON</p>
+        <p class="away">FINE</p>
+        <p class="ok">IT'S OKAY</p>
+        <p class="hurt">DON'T HURT </p>
+        <p class="look">NO</p>
+        <p class= "better"><a href="Statement1.html"> &#128151; </a>
+</p>
+    </div></div>
+    
+</body>
+</html>
